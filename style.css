@@ -1,0 +1,96 @@
+p {
+    font-size: 20px;
+    margin: 6px
+}
+
+/* Dimensions for the two main webpage columns */
+#city-search {
+    background-color: lightgrey;
+    min-height: 400px;
+}
+
+#city-data {
+    min-height: 400px;
+}
+
+/* Styling for search and search history box */
+#city-input {
+    width: 220px;
+    height: 30px;
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+}
+
+#search-button {
+    color: white;
+    background-color: rgb(45, 147, 243);
+}
+
+#clear-button {
+    background-color: orange;
+}
+
+#searched-cities {
+    min-width: 200px;
+    background-color: white;
+}
+
+/* Styling for same-day weather box*/
+#same-day-weather-box {
+    min-height: 200px;
+    margin: 10px;
+    border: solid black 1px;
+    background-color: white;
+}
+
+/* Styling for five day forecast section*/
+#five-day-forecast {
+    min-height: 200px;
+    margin: 5px;
+}
+
+.my-forecast-boxes {
+    margin-right: 20px;
+    background-color: rgb(45, 147, 243);
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.card-body {
+    background-color: rgb(45, 147, 243);
+    padding: 6px;
+}
+
+.card-text {
+    background-color: rgb(45, 147, 243);
+    
+}
+
+.hide {
+    display: none;
+}
+
+/*UV index severity classes*/
+p.uv-low {
+    background-color:green;
+}
+p.uv-mod {
+    background-color:yellow;
+}
+p.uv-high {
+    background-color:orange;
+}
+p.uv-veryhigh {
+    background-color:red;
+}
+p.uv-extreme {
+    background-color: rgb(238, 50, 238);
+}
+
+/*Making sure the first letter of the displayed city is capitalized*/
+#city-name::first-letter {
+    text-transform: capitalize;
+}
+.list-group-item::first-letter {
+    text-transform: capitalize;
+}

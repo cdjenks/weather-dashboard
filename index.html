@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="row">
+        <section id="city-search" class="col-lg-3">
+            <h5 style="margin-left: 20px; margin-top: 10px;">Search For a City</h5>
+            <!--Search bar/button-->
+            <input id="city-input" type="text">
+
+            <button id="search-button">Search</button>
+            <!--Selected cities div-->
+            <div class="card">
+                <ul id="searched-cities" class="list-group list-group-flush">
+                </ul>
+              </div>
+            <!--Clear button-->
+            <button id="clear-button" class="hide">Clear Cities</button>
+
+        </section>
+        <section id="city-data" class="col-lg-9">
+            <!--Day-of city weather info-->
+            <div id="same-day-weather-box" class="row">
+                <div>
+                    <div class="row" style="margin-left: 1px;">
+                        <h2 id="city-name"></h2>
+                        <img id="same-day-icon">
+                    </div>
+                    <p id="city-temp"></p>
+                    <p id="city-humidity"></p>
+                    <P id="city-wind-speed"></P>
+                    <div class="row" style="margin-left: 1px;">
+                        <p id=city-UV-index></p>
+                        <p id="uvindex-value"></p>
+                    </div>
+                </div>
+            </div>
+            <!--Five day forecast div-->
+            <div id="five-day-forecast" class="row">
+                <section id="forecast-boxes" class="hide">
+                    <h3>5-Day Forecast</h3>
+                </section>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
