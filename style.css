@@ -1,12 +1,21 @@
+body {
+    background-color: white;
+    background-image: url("https://images.unsplash.com/photo-1534794048419-48e110dca88e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1248&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 6px
 }
 
 /* Dimensions for the two main webpage columns */
 #city-search {
-    background-color: lightgrey;
+    background-image:linear-gradient(white, rgb(45, 147, 252));
     min-height: 400px;
+    border-radius: 16px;
 }
 
 #city-data {
@@ -21,6 +30,7 @@ p {
     margin: 0px 20px 20px 20px;
 }
 
+/*Button styling*/
 #search-button {
     color: white;
     background-color: rgb(45, 147, 243);
@@ -28,6 +38,11 @@ p {
 
 #clear-button {
     background-color: orange;
+}
+
+#uvindex-button {
+    margin: 10px 0 0 30px;
+    background-color: rgb(242, 245, 241);
 }
 
 #searched-cities {
@@ -40,7 +55,8 @@ p {
     min-height: 200px;
     margin: 10px;
     border: solid black 1px;
-    background-color: white;
+    background-color: rgb(209, 184, 145, .7);
+    
 }
 
 /* Styling for five day forecast section*/
