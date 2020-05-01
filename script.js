@@ -83,7 +83,7 @@ function displayWeatherToday(inputCity){
         $("#city-UV-index").text("UV Index:");
         var lon = response.coord.lon;
         var lat = response.coord.lat;
-        uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=e049298ddd73342a74fe9ed55436d61b&lat=" + lat + "&lon=" + lon;
+        uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=e049298ddd73342a74fe9ed55436d61b&lat=" + lat + "&lon=" + lon;
         
         
         savedCities = localStorage.getItem("Cities")
